@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BlueCore</title>
+    <style>
+        /* simple selector */
+        /* h1 {
+            color: lightblue
+        }
+
+        p {
+            background-color: lightpink;
+        }
+
+        #unique {
+
+            color: orange;
+            text-decoration: underline;
+        }
+         .common {
+            background-color: lightgreen;
+        }  */
+
+
+        /* combinator selector */
+        /* .common p {
+            color: blue;
+        } */
+        /*
+        .common > p{     //immediate
+        background-color: yellow;
+        } 
+        .common + div{
+            background-color: lightsalmon;
+        }
+        .common ~ div{
+            background-color: lightsalmon;
+        }*/
+
+        /*Attribute selector*/
+        /* label[for] {
+            color: pink
+        }
+        label[for="name"]{
+            background-color: red;
+        }
+        input[type]{
+            background-color: black;
+        } */
+    </style>
+</head>
+
+<body>
+
+
+    <div class="common commmon2">
+        <div class="something">Something</div>
+        <div class="something2">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, esse velit ipsum tempora architecto
+                incidunt rem harum necessitatibus unde natus qui a omnis amet magnam assumenda odio nostrum dolor.
+                Veniam
+            </p>
+        </div>
+        <div class="something3">Something</div>
+        <p>Hello !!!</p>
+    </div>
+    <div class="sib">Immediate sibling</div>
+
+
+    <h1>Hello Everyone</h1>
+    <h2>Hello Everyone</h2>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. At soluta maiores deserunt earum debitis nisi
+        reprehenderit, asperiores eum, repellendus adipisci blanditiis deleniti cupiditate numquam eos? Cumque vel
+        repellat rem dolores!
+    </p>
+    <!-- anchor tag -->
+    <a href="https://www.google.com">Go to google</a>
+    <!-- Division -->
+    <div>
+        general sibling
+        <!-- <p>Pepcoder</p> -->
+    </div>
+
+
+
+
+
+
+
+    <div></div>
+    <!-- <div class="common">Hello</div> -->
+    <div></div>
+    <!-- <div class="common2">Diff Hello</div> -->
+    <!-- unordered list -->
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <!-- ordered list -->
+    <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ol>
+
+    <span>Content filling tag</span>
+    <img width="60"
+        src="https://images.unsplash.com/photo-1661956602944-249bcd04b63f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+        alt="some images">
+
+    <!-- form -->
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email">
+
+        <label for="pass">Password</label>
+        <input type="password" id="pass">
+
+        <label for="phone">Phone</label>
+        <input type="number" id="phone">
+
+    </form>
+
+</body>
+
+</html>

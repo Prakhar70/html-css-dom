@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .orange{
+            height:20rem;
+            width:20rem;
+            background-color: orange;
+        }
+        .blue{
+            height:10rem;
+            width:10rem;
+            background-color: blue;
+        }
+        .yellow{
+            height:5rem;
+            width:5rem;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="orange">
+        <div class="blue">
+            <div class="yellow"></div>
+        </div>
+    </div>
+    <script>
+        let orange=document.querySelector(".orange");
+        let blue=document.querySelector(".blue");
+        let yellow=document.querySelector(".yellow");
+
+        orange.addEventListener("click",(e)=>{
+            alert("orange");
+            console.log(e.target,e.currentTarget);
+        })//by default bubbling phase is on
+
+        blue.addEventListener("click",(e)=>{
+            alert("blue1");
+            // e.stopPropagation();
+            //e.stopImmediatePropagation()
+
+        })
+        // blue.addEventListener("click",(e)=>{
+        //     alert("blue2");
+        // })
+
+        yellow.addEventListener("click",(e)=>{
+            alert("yellow");
+        })
+    </script>
+</body>
+</html>

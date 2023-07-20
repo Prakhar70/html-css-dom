@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU" >
+    <a href="https://wwww.google.com">Google</a>
+    <div>Hello</div>
+    <script>
+        alert(document.readyState)
+        document.addEventListener("DOMContentLoaded",(e)=>{
+            alert("Your Dom is ready to access");
+            alert(document.readyState);
+            let img = document.querySelector("img");
+            alert(img.height);
+        })
+        window.addEventListener("load",(e)=>{
+            alert("Your image is ready");
+            alert(document.readyState);
+            // let img = document.querySelector("img");
+            // alert(img.height);
+        })
+        window.addEventListener("beforeunload",(e)=>{
+            return e.returnValue="Something random";//if using google chrome
+            
+        })
+    </script>
+</body>
+</html>
