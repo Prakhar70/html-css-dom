@@ -1,0 +1,16 @@
+Descendant combinator (space): It selects an element that is a
+descendant of another specified element. Example: element1 element2 {
+/* CSS rules */ }
+
+Child combinator (>): It selects an element that is a direct child of
+another specified element. Example: element1 > element2 { /* CSS rules
+*/ }
+
+Adjacent sibling combinator (+): It selects an element that is
+immediately preceded by another specified element. Example: element1 +
+element2 { /* CSS rules */ }
+
+General sibling combinator (~): It selects all elements that share the
+same parent and appear after the specified element, regardless of
+whether they are immediate siblings or not. Example: element1 ~
+element2 { /* CSS rules */ }

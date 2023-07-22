@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            justify-items: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            height: 10rem;
+            width: 10rem;
+            border: 2px solid red;
+            margin: 1rem;
+        }
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card red"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+    <script>
+        function deleteAllSiblings(redElem){
+            
+            let beforeRed=redElem.previousElementSibling;
+            let afterRed=redElem.nextElementSibling;
+            while(beforeRed!=null){
+
+                beforeRed.remove();
+                beforeRed=redElem.previousElementSibling;
+            }
+            while(afterRed!=null){
+                
+                afterRed.remove();
+                afterRed=redElem.nextElementSibling;
+
+            }
+        }
+        let card_list=document.querySelectorAll(".card");
+        let redElem=card_list[5];
+        deleteAllSiblings(redElem)
+    </script>
+</body>
+</html>

@@ -63,6 +63,8 @@
         allCards.forEach((card) => {
             card.addEventListener("dblclick", (e) => {
                 let dataColor = card.getAttribute("data-color");
+                if(dataColor=="used")
+                    return;
                 card.classList.add(dataColor);
                 card.setAttribute("data-color", "used");
             })

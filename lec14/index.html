@@ -7,6 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <ul>
+        <li>1</li>
+        asdasd
+        <li>2</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script>
+        let li = document.querySelector("li");
+        let ul=li.parentElement;
+        let new_li=document.createElement("li");
+        new_li.innerText="6";
+        ul.appendChild(new_li);
+        let arr= ul.children;
+        for(let i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+        let arr1=ul.childNodes;
+        for(let i=0;i<arr1.length;i++){
+            console.log(arr1[i]);
+        }
+        
+    </script>
 </body>
 </html>
